@@ -55,14 +55,14 @@ func main() {
 	config := ReadEnv()
 
 	// Koneksi ke database
-	db := ConnectDB(config)
+	conn := ConnectDB(config)
 	// // db.AutoMigrate(&Barang{})
 
-	fmt.Println(db)
-	fmt.Println(db.Error)
+	fmt.Println(conn)
+	fmt.Println(conn.Error)
 
-	userAcc := datastore.UserDB{Db: db}
-	barangAcc := datastore.BarangDB{Db: db}
+	userAcc := datastore.UserDB{Db: conn}
+	barangAcc := datastore.BarangDB{Db: conn}
 
 	allUser, err := userAcc.GetAllDataUser()
 	if err != nil {
