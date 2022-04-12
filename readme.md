@@ -2,8 +2,8 @@
 
 ## Tech Stack ##
 Project ini dibagun menggunakan bahasa :
-- [Golang](www.go.dev)
-- [React](www.reactjs.org)
+- [Golang](https://go.dev/)
+- [React](https://reactjs.org/)
 
 ## How to Use ##
 Untuk **menggunakan** project _ini_ tolong sediakan file `.env` dengan struktur seperti berikut:
